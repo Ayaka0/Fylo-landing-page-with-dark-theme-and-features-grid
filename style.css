@@ -103,7 +103,7 @@ header {
   max-width: 72rem;
 }
 .image-header-intro {
-  width: 80%;
+  width: 60%;
 }
 .head-h2 {
   font-size: 2rem;
@@ -150,7 +150,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  max-width: 88em;
+  max-width: 50em;
 }
 .feature-card {
   display: flex;
@@ -195,7 +195,7 @@ main {
   width: 100%;
 }
 .image-main-productive {
-  width: 100%;
+  width: 80%;
 }
 
 .productive-container {
