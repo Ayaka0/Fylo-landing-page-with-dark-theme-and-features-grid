@@ -103,7 +103,7 @@ header {
   max-width: 72rem;
 }
 .image-header-intro {
-  width: 100%;
+  width: 80%;
 }
 .head-h2 {
   font-size: 2rem;
@@ -521,6 +521,9 @@ i {
   .address,
   .contacts {
     width: 90%;
+  }
+  .image-header-intro {
+    width: 100%;
   }
 }
 
