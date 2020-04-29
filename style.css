@@ -51,7 +51,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 5%;
-  padding-bottom: 8em;
+  padding-bottom: 5em;
   background-color: var(--intro-email);
 }
 
@@ -91,29 +91,19 @@ header {
   margin: auto;
   background-color: var(--intro-email);
 }
-/*
-.header-main h2,
-p,
-.head-btn {
-  position: relative;
-  z-index: 1;
-}*/
-/*
-.head-h2::before {
-  content: url(images/bg-curvy-desktop.svg);
-  position: relative;
-  max-width: 100%;
-  top: 15em;
-  right: 14em;
-  z-index: -1;
-}*/
+
 .container {
   max-width: 100%;
-  height: 1050px;
   margin: 0 auto;
 }
 .head-img {
-  padding: 2em;
+  padding: 0em 2em 2em;
+  width: 81%;
+  margin: 0 auto;
+  max-width: 72rem;
+}
+.image-header-intro {
+  width: 100%;
 }
 .head-h2 {
   font-size: 2rem;
@@ -127,6 +117,7 @@ p,
   padding: 0 32%;
   line-height: 1.5;
   margin-bottom: 1em;
+  padding-bottom: 2em;
   position: relative;
   z-index: 1;
 }
@@ -145,22 +136,13 @@ p,
   letter-spacing: 5px;
   transition: 0.5s;
 }
-.img-curve-desktop {
-  max-width: 100%;
-  position: relative;
-  bottom: 12em;
-  padding-bottom: 3em;
-  position: relative;
-  z-index: 0;
-}
-
 /* Main section */
 main {
   background-color: var(--main);
 }
 /*   Feature cards section  */
 .features {
-  padding: 8em 2.7em 13em;
+  padding: 4em 0 13em 0;
 }
 
 .feature-cards-container {
@@ -208,6 +190,16 @@ main {
 .productive-container {
   display: flex;
   justify-content: space-between;
+}
+.productive-img {
+  width: 100%;
+}
+.image-main-productive {
+  width: 100%;
+}
+
+.productive-container {
+  width: 100%;
 }
 .productive-img + .productive-title {
   padding-left: 7%;
@@ -425,4 +417,145 @@ i {
   position: relative;
   right: 2em;
   top: 1.5em;
+}
+
+@media (max-width: 950px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 639px) {
+  .header-logo {
+    width: 5.5em;
+    height: 1.625em;
+  }
+  .nav-link {
+    font-size: 0.925rem;
+  }
+  .nav-link li {
+    padding: 0 5px;
+  }
+  .head-h2 {
+    font-size: 1.3rem;
+    padding-right: 5.9em;
+    padding-left: 5.9em;
+  }
+  .head-p {
+    padding-right: 5.9em;
+    padding-left: 5.9em;
+  }
+  .feature-heading {
+    font-size: 1.3rem;
+  }
+  .header-main {
+    padding-top: 4.8em;
+    background: url(images/bg-curvy-mobile.svg);
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--intro-email);
+  }
+  .feature-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .feature-card {
+    width: 100%;
+  }
+  .productive {
+    padding: 0 1em;
+  }
+  .productive-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .productive-title {
+    padding-left: 0em;
+  }
+  .productive-title h2 {
+    font-size: 1.3rem;
+    padding-right: 0em;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-right: 3.5em;
+    padding-left: 3.5em;
+  }
+
+  .testimony1 + .testimony2,
+  .testimony2 + .testimony3 {
+    margin-top: 2em;
+  }
+  .email {
+    width: 100%;
+  }
+  .subscribe-btn {
+    transform: translateY(2em);
+  }
+  .footer-container {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .socials {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 533px) {
+  footer {
+    padding: 12em 1em 2em 3em;
+  }
+  .address,
+  .contacts {
+    width: 90%;
+  }
+}
+
+@media (max-width: 470px) {
+  .testimony1,
+  .testimony2,
+  .testimony3 {
+    width: 20em;
+  }
+  .access-ready {
+    max-width: 80%;
+  }
+  .access-ready h2 {
+    font-size: 1.3rem;
+  }
+  .subscribe-btn {
+    padding: 1em 5em;
+  }
+  footer {
+    padding: 12em 1em 2em 3em;
+  }
+  .address,
+  .contacts {
+    width: 90%;
+  }
+}
+
+@media (min-width: 640px) {
+  .header-main {
+    padding-top: 5em;
+    background: url(images/bg-curvy-desktop.svg);
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--intro-email);
+    padding-bottom: 5em;
+  }
 }
